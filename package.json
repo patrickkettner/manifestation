@@ -1,0 +1,39 @@
+{
+  "name": "manifestation",
+  "version": "1.0.0",
+  "description": "Generate a Web App Manifest form your existing HTML",
+  "main": "lib/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickkettner/manifestation.git"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "manifest",
+    "appmanifest"
+  ],
+  "author": "Patrick Kettner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickkettner/manifestation/issues"
+  },
+  "homepage": "https://github.com/patrickkettner/manifestation#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "cheerio": "^0.20.0",
+    "cld": "^2.4.6",
+    "icojs": "^0.4.0",
+    "image-size": "^0.5.0",
+    "image-type": "^2.1.0",
+    "lodash": "^4.13.1",
+    "mime-types": "^2.1.11",
+    "request": "^2.72.0",
+    "strip-combining-marks": "^0.1.0",
+    "valid-url": "^1.0.9",
+    "xregexp": "^3.1.1"
+  }
+}
