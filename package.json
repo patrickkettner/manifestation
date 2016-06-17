@@ -1,6 +1,6 @@
 {
   "name": "manifestation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a Web App Manifest form your existing HTML",
   "main": "lib/index",
   "scripts": {
