@@ -66,6 +66,19 @@ describe('icons', () => {
       });
     });
 
+    it('can handle a corrupt ico file', (done) => {
+
+      Sinon.stub(Request, 'get').yields(null, { statusCode: 200 }, ReadIcoFile('corrupt'));
+
+      Icons({ url: '', html:  ReadFile('preferRel') }, (e, result) => {
+
+        console.log(e);
+        Expect(e).toNotExist();
+        Expect(result).toEqual([]);
+
+        done();
+      });
+    });
 
     it('Can handle a 404', (done) => {
 
