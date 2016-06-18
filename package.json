@@ -27,6 +27,7 @@
     "cheerio": "^0.20.0",
     "cld": "^2.4.6",
     "eslint-config-hapi": "^9.1.0",
+    "expect": "^1.20.1",
     "icojs": "^0.4.0",
     "image-size": "^0.5.0",
     "image-type": "^2.1.0",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "eslint": "^2.13.0",
     "eslint-plugin-hapi": "^4.0.0",
+    "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.5.3",
     "sinon": "^1.17.4"
   }
