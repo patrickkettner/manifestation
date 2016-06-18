@@ -23,6 +23,16 @@ describe('lang', () => {
       });
     });
 
+    it('returns the xml:lang attr from the HTML element when declared', (done) => {
+
+      Lang(ReadFile('xhtmlLang'), (e, result) => {
+
+        Expect(e).toNotExist();
+        Expect(result).toEqual('ru');
+        done();
+      });
+    });
+
     it('falls back to the meta langauge tag when declared', (done) => {
 
       Lang(ReadFile('metaLang'), (e, result) => {
