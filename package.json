@@ -1,6 +1,6 @@
 {
   "name": "manifestation",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Generate a Web App Manifest form your existing HTML",
   "main": "lib/index",
   "scripts": {
@@ -30,6 +30,7 @@
     "cld": "^2.4.6",
     "eslint-config-hapi": "^9.1.0",
     "expect": "^1.20.1",
+    "file-type": "^3.8.0",
     "icojs": "^0.4.0",
     "image-size": "^0.5.0",
     "image-type": "^2.1.0",

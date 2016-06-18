@@ -94,6 +94,20 @@ describe('icons', () => {
 
     });
 
+    it('Can handle a 404 disguised as a 200', (done) => {
+
+      Sinon.stub(Request, 'get').yields(null, { statusCode: 200 }, ReadFile('index'));
+
+      Icons({ url: '', html:  ReadFile('index') }, (e, result) => {
+
+        Expect(e).toNotExist();
+        Expect(Request.get.calledWith({ url: '/favicon.ico', encoding: null })).toBe(true);
+        Expect(result).toEqual([]);
+        done();
+      });
+
+    });
+
     afterEach(() => Request.get.restore());
   });
 });
