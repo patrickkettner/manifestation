@@ -1,6 +1,8 @@
 ## Manifestation
 
-Kickstart your Progressive Web App journey with the information your site alredy contains. Manifestation downloads and scans the HTML of your site or app to try and build the most comprehensive [Wep App Manifest](https://www.w3.org/TR/appmanifest/) possible. Fields include
+Kickstart your Progressive Web App journey with the information your site alredy contains. Manifestation downloads and scans the HTML of your site or app to try and build the most comprehensive [Wep App Manifest](https://www.w3.org/TR/appmanifest/) possible.
+
+## Usage
 
 ```js
 npm install manifestation
@@ -15,6 +17,12 @@ Manifestation({url: 'http://www.example.com'}, (err, manifest) => {
 
   console.log(manifest);
 
+});
+```
+
+## Fields include
+
+```js
   // outputs....
   // {
   //  "lang": "en",
