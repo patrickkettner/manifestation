@@ -4,7 +4,9 @@ const Expect = require('expect');
 
 const ReadFile = function (fileName) {
 
-  return Fs.readFileSync(`${__dirname}/../../mocks/lib/scrapers/name/${fileName}.html`);
+  return {
+    html: Fs.readFileSync(`${__dirname}/../../mocks/lib/scrapers/name/${fileName}.html`)
+  };
 };
 
 const Name = require('../../../lib/scrapers/name');

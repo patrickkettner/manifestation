@@ -1,6 +1,6 @@
 {
   "name": "manifestation",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Generate a Web App Manifest form your existing HTML",
   "main": "lib/index",
   "scripts": {
@@ -38,6 +38,7 @@
     "mime-types": "^2.1.11",
     "request": "^2.72.0",
     "strip-combining-marks": "^0.1.0",
+    "tld-extract": "^1.0.1",
     "valid-url": "^1.0.9",
     "xregexp": "^3.1.1"
   },
